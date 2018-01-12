@@ -1,0 +1,56 @@
+# %2$s is command string, %1$s is what command was sent. /%1$s %2$s - /plm command
+# %s is string input
+# Do not remove these, otherwise messages will not be displayed correctly.
+Command:
+  Description:
+    Enable: "enable <plugin> &b- Включает плагин"
+    Disable: "disable <plugin> &b- Отключает плагин"
+    Load: "load <plugin> &b- Загружает плагин (Должно использоватся имя файла, без .jar)"
+    Unload: "unload <plugin> &b- Разгружает плагин"
+    Reload: "reload <plugin> &b- Перезагружает плагин"
+    Sreload: "sreload <plugin> &b- Отключает и включает плагин"
+    Show: "show <plugin> &b- Показывает подробную информацию о плагине"
+    List: "list [options] &b- Список плагинов с указанными параметрами"
+    ListOptions: "&eПараметры List\n&e-v &6- Показывает плагины с версиями\n&e-o &6- Опции\n&e-a &6- Список в алфавитном порядке\n&e-s:name &6- Список плагинов, содержащих данное имя"
+    ConfigReload: "configreload <plugin> &b- Перезагружает конфигурационный файл плагина."
+Response:
+  Error:
+    NoCommand: "&cКоманда %2$s не найдена. Попробуйте /%1$s для помощи!"
+    NoPermission: "&cУ вас нет прав для использования этой команды!"
+    NoPlugin: "&cНет такого плагина: %s"
+    AlreadyEnabled: "&c%s уже включен!"
+    AlreadyDisabled: "&c%s уже отключен!"
+    NoSuchFile: "&cНет такого файла: %s"
+    NoDescriptionFile: "&cФайл Jar не содержит файла plugin.yml: %s"
+    AlreadyLoaded: "&c%s уже загружен!"
+    PluginNotLoaded: "&cОшибка при загрузки плагина %s! (Проверьте консоль для деталей.)"
+    FailedonLoad: "Не удалось вызвать 'onLoad()' для плагина '%s'"
+    UnloadError: "&cПроизошла ошибка при разгрузке %s!"
+    UnloadFailed: "&cНе удалось выгрузить %s! (Проверьте консоль для деталей.)"
+    NoJar: "Файл Jar у плагина &c%s отсутствует!"
+  Action:
+    UpdateAvailable: "Обнаружено обновление для PluginManagerReloaded: %1$s билд %2$s.%3$s.%4$s доступен"
+    PluginEnabled: "&a%s включен!"
+    PluginDisabled: "&a%s отключен!"
+    PluginLoaded: "&a%1$s %2$s загружен!"
+    PluginUnloaded: "&a%1$s %2$s успешно разгружена."
+    PluginReloaded: "&a%s успешно перезагружена."
+    PluginSreloaded: "&a%1$s %2$s ""мягко"" перезагружена."
+    List:
+      Enabled: "&aВключенные плагины: %s"
+      Disabled: "&aОтключенные плагины: &c%s"
+    ConfigReload: "&aКонфигурация %s успешно перезагружена."
+  Show:
+    Name: "&bИнформация о плагине: &a%s&b"
+    Status: 
+      Main: "&6Статус: %s"
+      Enabled: "&aВключено"
+      Disabled: "&cОтключено"
+    Description: "&bОписание: &a%s"
+    Version: "&bВерсия: &a%s"
+    Main: "&bОсновной класс: &a%s"
+    File: "&bФайл Jar: &a%s"
+    Author:
+      Single: "&bАвтор: &a%s"
+      Multiple: "&bАвторы: &a%s"
+    Website: "&bВеб-сайт: &a%s"
